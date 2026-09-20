@@ -493,7 +493,7 @@ a {
     }
 
     .hero-content {
-        padding: 90px 0;
+        padding: 120px 0 90px;
     }
 
     .hero h1 {
@@ -522,11 +522,11 @@ a {
 @media (max-width: 560px) {
 
     .nav-links {
-        gap: 12px;
+        gap: 8px;
     }
 
     .nav-links a {
-        font-size: 0.75rem;
+        font-size: 0.68rem;
     }
 
     .hero-content {
