@@ -307,6 +307,30 @@ a {
     margin-top: 28px;
 }
 
+.project-flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 26px;
+    padding: 14px 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--surface-light);
+}
+
+.project-flow span {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.project-flow span:nth-child(even) {
+    color: var(--text);
+    font-weight: 600;
+}
+
 .project-tags span {
     padding: 7px 11px;
 
