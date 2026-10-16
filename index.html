@@ -687,10 +687,11 @@
                     An end-to-end, multi-user Retrieval-Augmented Generation
                     application for enterprise document intelligence. Features
                     semantic retrieval, cross-encoder reranking, grounded LLM
-                    responses with source citations, Supabase authentication,
-                    Redis-backed session management, password recovery, and
-                    Groq-Gemini provider fallback. Includes document management
-                    with cancellable batch uploads, FastAPI services, automated
+                    responses with source citations, Supabase authentication with
+                    per-user workspace isolation, Redis-backed sessions, password
+                    recovery, and Groq-Gemini provider fallback. Retrieval was
+                    benchmarked on 40 questions over 8 synthetic policy documents.
+                    Includes cancellable batch uploads, FastAPI services, automated
                     testing, and Docker-based deployment.
                 </p>
 
@@ -766,18 +767,18 @@
                 </div>
 
                 <div class="highlight-item">
-                    <strong>Redis</strong>
-                    <span>Opaque sessions with seven-day TTL</span>
+                    <strong>MRR 1.000</strong>
+                    <span>Reranking lifted MRR from 0.975; Hit Rate@5 100% (40 questions)</span>
                 </div>
 
                 <div class="highlight-item">
-                    <strong>Security</strong>
-                    <span>Supabase authentication and password recovery</span>
+                    <strong>Auth + Redis</strong>
+                    <span>Supabase auth, password recovery, opaque sessions with seven-day TTL</span>
                 </div>
 
                 <div class="highlight-item">
-                    <strong>Batch Uploads</strong>
-                    <span>Live progress and cooperative cancellation</span>
+                    <strong>130 tests</strong>
+                    <span>Automated suite with GitHub Actions CI</span>
                 </div>
 
             </div>
